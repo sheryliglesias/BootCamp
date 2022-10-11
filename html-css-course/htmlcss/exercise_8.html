@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+  <title>Bootstrap Exercise</title>
+  <meta name="viewport" content="width=device-width, initial-scale"/>
+  <link href="css/bootstrap.min.css" rel="stylesheet"/>
+  <script src="js/bootstrap.min.js" type="javascript"></script>
+
+  <style>
+    
+      .container,
+      div[class="container"] {
+          /* background-color:#ccc;*/
+           border-radius: 4px;
+      }
+     .table-striped>tbody>tr:nth-of-type(odd)>{
+      color:#555
+     }
+     .img-thumbnail1{
+        padding: 0.5rem;
+     }
+     .rounded-circle>img{
+        position:relative;
+        left: -40px;
+     }
+      
+  </style>
+
+</head>
+  <body>
+    <p class="text-muted">Text Muted</p>
+    <p class="text-primary">Text Primary</p>
+    <p class="text-success">Text Success</p>
+    <p class="tex-info">Text Info</p>
+    <p class="text-warning">Text Warning</p>
+    <p class="text-danger">Text Danger</p>
+    <p class="text-secondary">Text Secondary</p>
+    <p class="text-white">Text White</p>
+    <p class="text-dark">Text Dark</p>
+    <p class="text-body">Text Body</p>
+    <p class="text-light">Text Light</p>
+
+
+    <table class="table table-striped table-bordered table-hover">
+      <thead>
+        <tr>
+          <th>Item Description</th>
+          <th>Qty</th>
+          <th>Unit price</th>
+          <th>Amount</th>  
+        </tr>
+    </thead>
+    <tbody>
+
+        <tr class="table-primary">
+          <td> Razer Mouse</td>
+          <td>1</td>
+          <td>4,000</td>
+          <td>14,500</td>
+        </tr>
+
+        <tr class="table-success">
+          <td> Razer chrome</td>
+          <td>1</td>
+          <td>4,500</td>
+          <td>14,500</td>
+        </tr>
+
+        <tr class="table-danger">
+          <td> Artic 1 Headset</td>
+          <td>1</td>
+          <td>4,500</td>
+          <td>14,500</td>
+        </tr>
+     
+        <tr class="table-info">
+          <td> monitor 32"</td>
+          <td>1</td>
+          <td>4,500</td>
+          <td>14,500</td>
+        </tr>
+
+        <tr class="table-warning">
+          <td> Razer chrome</td>
+          <td>1</td>
+          <td>4,500</td>
+          <td>14,500</td>
+        </tr>
+
+        <tr class="table-active">
+          <td> Artic 1 Headset</td>
+          <td>1</td>
+          <td>4,500</td>
+          <td>14,500</td>
+        </tr>
+     
+        <tr class="table-secondary">
+          <td> monitor 32"</td>
+          <td>1</td>
+          <td>4,500</td>
+          <td>14,500</td>
+        </tr>
+
+        <tr class="table-light">
+          <td> monitor 32"</td>
+          <td>1</td>
+          <td>4,500</td>
+          <td>14,500</td>
+        </tr>
+
+        <tr class="table-dark">
+          <td> monitor 32"</td>
+          <td>1</td>
+          <td>4,500</td>
+          <td>14,500</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="table table-striped table-bordered table-hover table-light table-small">
+      <thead>
+        <tr>
+          <th>Item Description</th>
+          <th>Qty</th>
+          <th>Unit price</th>
+          <th>Amount</th>  
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td> monitor 32"</td>
+          <td>1</td>
+          <td>4,500</td>
+          <td>14,500</td>
+        </tr>
+        <tr>
+          <td> monitor 32"</td>
+          <td>1</td>
+          <td>4,500</td>
+          <td>14,500</td>
+        </tr>
+        <tr>
+          <td> monitor 32"</td>
+          <td>1</td>
+          <td>4,500</td>
+          <td>14,500</td>
+        </tr>
+        <tr>
+          <td> monitor 32"</td>
+          <td>1</td>
+          <td>4,500</td>
+          <td>14,500</td>
+        </tr>
+    </table>  
+
+    <table class="table table-striped table-bordered table-hover table-dark table-small">
+      <thead>
+        <tr>
+          <th>Item Description</th>
+          <th>Qty</th>
+          <th>Unit price</th>
+          <th>Amount</th>  
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td> monitor 32"</td>
+          <td>1</td>
+          <td>4,500</td>
+          <td>14,500</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td> monitor 32"</td>
+          <td>1</td>
+          <td>4,500</td>
+          <td>14,500</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td> monitor 32"</td>
+          <td>1</td>
+          <td>4,500</td>
+          <td>14,500</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td> monitor 32"</td>
+          <td>1</td>
+          <td>4,500</td>
+          <td>14,500</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>  
+
+    <div class="table-responsive-lg">
+    <table class="table table-striped table-borderless table-hover">
+      <thead>
+        <tr>
+          <th>Item Description</th>
+          <th>Qty</th>
+          <th>Unit price</th>
+          <th>Amount</th>  
+          <th>Amount1</th>
+          <th>Amount2</th>
+          <th>Amount3</th>
+          <th>Amount4</th>  
+          <th>Amount5</th>
+          <th>Amount6</th>
+          <th>Amount7</th>
+          <th>Amount8</th>
+          <th>Amount9</th>
+          <th>Amount10</th>
+        </tr>
+    </thead>
+  
+       <tr>
+          <td> monitor 32"</td>
+          <td>1</td>
+          <td>4,500</td>
+          <td>14,500</td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td> monitor 32"</td>
+          <td>1</td>
+          <td>4,500</td>
+          <td>14,500</td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td> monitor 32"</td>
+          <td>1</td>
+          <td>4,500</td>
+          <td>14,500</td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td> monitor 32"</td>
+          <td>1</td>
+          <td>4,500</td>
+          <td>14,500</td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+     </body>
+   </table>
+ </div>
+
+ <div class="pb-5" style="width:300px;height:400px;border:1px solid;">
+     <img src="sheryl selfie.jpg" class="rounded" width="300" height="auto"/>
+ </div>
+
+    <img src="sheryl selfie.jpg" class="rounded" width="300" height="auto"/>
+    <img src="sheryl selfie.jpg" class="rounded-circle" width="300" height="auto"/>   
+    <img src="sheryl selfie.jpg" class="img-thumbnail" width="300" height="auto"/>   
+
+  <div style="height:200px; width:200px; overflow:hidden;" class="rounded-circle">
+       <img src="sheryl selfie.jpg" class="" width="300" height="auto"/>   
+ </div>
+
+    <div style="height: 200px; width: 200px; overflow:hidden;" class="rounded-circle">
+        <img src="sheryl selfie.jpg" class="" width="300" height="auto"/>            
+        <h4>Sheryl</h4>
+    </div>
+       <img src="sheryl selfie.jpg" class="rounded float-start" width="300" height="auto"/>
+        <p>IN THE SUMMER OF 1994, I was a rising junior at Yale University. I had already changed my major twice. I began as a premed student, because I had an elaborate fantasy about becoming an emergency room doctor, fast on my feet, saving lives, engaging in torrid affairs with my fellow doctors, sex in on-call rooms, living a grand life. And then I took introductory biology with a professor who told the hundreds of
+         At the beginning of my sophomore year, I decided I would be an architect. My father is a civil engineer, so I hoped that an understanding of structures was part of my genetic inheritance. I loved my architecture classes. I loved building models and imagining what structures could be. In an urban planning class, I learned about how a city is designed and the importance of green space.
+         IN THE SUMMER OF 1994, I was a rising junior at Yale University. I had already changed my major twice. I began as a premed student, because I had an elaborate fantasy about becoming an emergency room doctor, fast on my feet, saving lives, engaging in torrid affairs with my fellow doctors, sex in on-call rooms, living a grand life. And then I took introductory biology with a professor who told the hundreds of
+         At the beginning of my sophomore year, I decided I would be an architect. My father is a civil engineer, so I hoped that an understanding of structures was part of my genetic inheritance. I loved my architecture classes. I loved building models and imagining what structures could be. In an urban planning class, I learned about how a city is designed and the importance of green space.
+         IN THE SUMMER OF 1994, I was a rising junior at Yale University. I had already changed my major twice. I began as a premed student, because I had an elaborate fantasy about becoming an emergency room doctor, fast on my feet, saving lives, engaging in torrid affairs with my fellow doctors, sex in on-call rooms, living a grand life. And then I took introductory biology with a professor who told the hundreds of
+         At the beginning of my sophomore year, I decided I would be an architect. My father is a civil engineer, so I hoped that an understanding of structures was part of my genetic inheritance. I loved my architecture classes. I loved building models and imagining what structures could be. In an urban planning class, I learned about how a city is designed and the importance of green space.
+         THE SUMMER OF 1994, I was a rising junior at Yale University. I had already changed my major twice. I began as a premed student, because I had an elaborate fantasy about becoming an emergency room doctor, fast on my feet, saving lives, engaging in torrid affairs with my fellow doctors, sex in on-call rooms, living a grand life. And then I took introductory biology with a professor who told the hundreds of
+         the beginning of my sophomore year, I decided I would be an architect. My father is a civil engineer, so I hoped that an understanding of structures was part of my genetic inheritance. I loved my architecture classes. I loved building models and imagining what structures could be. In an urban planning class, I learned about how a city is designed and the importance of green space.</p>
+
+ <div class="container">
+  <form class="border p-3 my-5 rounded">
+    <div class="row">
+      <div class="my-3 col">
+        <label class="form-label">First Name</label>
+        <input  class="form-control" type="text" name="first_name"/>
+      </div>
+  
+      <div class="my-3 col">
+         <label class="form-label">Last Name</label>
+         <input class="form-control" type="text" name="last_name"/>
+      </div>
+     </div>
+     <div class="row">
+      <div class="col my-3">
+        <label class="form-label">Email</label>
+        <input class="form-control" type="email" name="email"/>
+      </div>
+      <div class="col my-3">
+        <label class="form-label">Contact #</label>
+        <input class="form-control" type="text" name="contact_number"/>
+      </div>
+     </div>
+     <div class="row">
+      <div class="col my-3">
+        <textarea class="form-control" name="address" placeholder=" Add address Here"></textarea>
+      </div>
+     </div>
+     <div class="row">
+      <div class="col my-3">
+         <input class="form-control"  type="file"/>
+      </div>
+     </div>
+     <div class="row">
+      <div class="col my-3">
+        <label class="form-label">Payment Method</label>
+        <select class="form-select" name="payment_method">
+           <option>--</option>
+           <option>GCash</option>
+           <option>Credit Card</option>
+           <option>Paypal</option>
+           <option>Cash On Delivery</option>
+        </select>
+      </div>
+      <div class="col my-3">
+        <label class="form-label">Amount</label>
+        <input class="form-control" type="number" name="amount"/>
+      </div>
+      <div class="col my-3">
+        <label class="form-label">VAT</label>
+        <input class="form-control" type="number" name="vat"/>
+      </div>
+     </div>
+     <div class="row">
+      <div class="col my-3">
+        <input id="curr_aud"class="form-check-input" type="radio" name="currency"/>
+        <label for="curr_aud"class="form-label me-3">AUD</label>
+        <input id="curr_php" class="form-check-input" type="radio" name="currency"/>
+        <label for="curr_php"class="form-label me-3">PHP</label>
+        <input id="curr_usd"lass="form-check-input" type="radio" name="currency"/>
+        <label for="curr_usd"class="form-label me-3">USD</label>
+      </div>
+     </div>
+     <h4>Add-Ons</h4>
+     <div class="row">
+      <div class="col my-3">
+        <input id="gift_card"class="form-check-input" type="checkbox" name="gift_card"/>
+        <label for="gift_card" class="form-labe">With Gift Card</label>
+        <input id="discount"class="form-check-input" type="checkbox" name="discount"/>
+        <label for="discount" class="form-labe">With 10% Discount</label>
+        <input id="ecobag"class="form-check-input" type="checkbox" name="ecobag"/>
+        <label for="ecobag" class="form-labe">In Ecobag</label>
+      </div>
+     </div>
+     <div class="row">
+      <div class="col my-3">
+        <label class="form-label">Delivery Date</label>
+        <input class="form-control" type="date" name="delivery_date"/>
+       </div>
+      <div class="col my-3">
+        <label class="form-label"></label>
+        <input class="form-control" type="image" name="image" src="Stephen-Strange_-_Heroe.webp" width="5px" height="300px"/>
+       </div>
+      </div>
+      <div class="col my-3">
+     <label class="form-label">Range</label>
+    <input class="form-range" type="range" name="range" step="5" min="0" max="20"/>
+     </div>
+    </div>
+    <div class="row">
+      <div class="col my-3">
+       <button class="btn btn-primary">Submit</button> 
+       <button class="btn btn-success">Success</button> 
+       <button class="btn btn-secondary">Secondary</button> 
+       <button class="btn btn-warning">Warning</button> 
+       <button class="btn btn-danger">Danger</button> 
+      </div>
+    </div>
+   </form>
+  </div>
+
+ </body>
+</html>

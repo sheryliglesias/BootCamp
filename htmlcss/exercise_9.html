@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+  <head>  
+    
+       <title>bootstrap exercise</title>
+       
+       <meta name="viewport" content="width=device-width, initial-scale=1"/>
+       <link href="css/bootstrap.min.css" rel="stylesheet"/>
+       <link href="css/style.css" rel="stylesheet"/>
+       <script src="js/bootstrap.min.js" type="javascript"></script>
+     
+      
+
+
+   <style>
+    .img-thumbnail{
+       padding:0.5rem;
+    }
+
+    .rounded-circle>img{
+      position:relative;
+      left:-40px;
+    }
+
+    #profile-photo{
+      max-width: 300px;
+      max-height: 400px;
+      overflow: none;
+      margin:30px auto;
+    }  
+
+
+     #profile-photo>img{
+       width: 100%;
+       height:auto;
+    }
+
+     .my-portfolio{
+        background-color: #ccc;
+    }
+
+     .my-portfolio>row{
+        justify-content: center;
+    }
+
+     .my-portfolio h4.card-title{
+        height: 80px;
+     }
+  
+
+     .work-education>.container>.row>.col.text-end{
+        border-right:4px solid green;
+    }
+
+     .work-education>.container>.row>.col.order-last{
+       border-left: 4px solid green;
+    }
+
+     .col.text-end::after,
+     .col.order-last::after{
+       content: "\2666";
+       font-size: 42px;
+       color: green;
+       position: relative;
+       right:-28px;
+       bottom:36;
+    }
+
+    .col.order-last::after{
+       left:-28px;
+    }
+
+    button::before{
+      content: ">";
+      font-size: 24px;
+    }
+
+    @media screen and (max-width:768px){
+     .work-education>.container>.row>col{
+      display: none;
+     }
+    }
+
+   .work-education>.container>.row>.col.text-end,
+   .work-education>.container>.row>.col.order-last{
+      display: block;
+      text-align: center !important;
+      margin-bottom: 30px;
+    }
+
+   .col.text-end::after
+   .col.order-last::after{
+      content:'';
+   }
+
+   .work-education>.container>.row>.col.text-end {
+      border-right: none;
+   }
+
+   .work-education>.container>.row>.col.order-last {
+      border-left: none;
+  }
+
+
+   </style>
+
+</head>
+<body>
+  <header>  
+         <nav class="navbar">
+             <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">Portfolio</a></li> 
+                <li><a href="#">Experience</a></li> 
+                <li><a href="#">Contact Me</a></li> 
+             </ul>
+           </nav>
+        </header>                       
+        <section class="banner">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-sm-12 col-md-4 offset-md-1">
+                <h1 class="h1 mb-4">Sheryl V.Iglesias</h1>
+                <h2 class="h2">Full-Stack-Web Developer</h2>
+              </div>
+              <div class="col-sm-12 col-md-4 offset-md-2">
+                <div id="profile-photo" class="img-thumbnail p3-3">
+                <img src="sheryl selfie.jpg"/>  
+                </div>
+              </div>
+            </div>
+          </div>
+        
+      </section>
+      <section class="about- me">
+        <div class="container pt-5 pb-5">
+          <h3 class="text-center mb-5">About me</h3>
+ 
+          <p>I am Sheryl, currently working as OFW while studying Full Stack Development, I am ambitious and hardworking individual. Furthermore, I am adept at handling multiple tasks on a daily basis competently and at working well under pressure.
+             I love creating pages where I’m able to actually create enjoyable interactions and experiences for everyone! 
+          </p>
+         
+        </div> 
+       </section>
+       <section class="my-portfolio pt-5 pb-5">
+        <div class="container">
+          <h3 class="text-center mb-5">My Portfolio</h3>
+           <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4 justify-content-evenly">
+            <div class="col">
+             <div class="card h-100">
+              <div class="card-body">
+               <h4 class="card-title">RIA</h4>
+               <p>Ria Money Transfer is a subsidiary of Euronet Worldwide, Inc., which specializes in money remittances. Ria initiates transfers through a network of agents and company-owned stores located throughout North America, Latin America, Europe, Asia-Pacific, Africa, and online. Ria is one of the big four remittance companies.</p>
+              </div>   
+            </div> 
+          </div>
+       
+      <div class="col">
+         <div class="card h-100">
+           <div class="card-body">
+             <h4 class="card-title">GARDAVU</h4>
+             <p>GARDAVU is an organization to provide security  guard services and cleaning. Located at Talca Chile.</p>
+          </div>
+        </div>
+      </div>
+    
+      
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h4 class="card-title">LAZADA</h4>
+             <p>Lazada's constantly evolving technology, logistics and payments infrastracture connects this vast and diverse region, and offers Southeast Asia a shopping experience that is safe,seamless and enjoyable.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h4 class="card-title">SHEIN</h4>
+            <p>SHEIN is a global fashion and lifestyle e-retailer committed to making the beauty of fashion accessible to all. </p>
+          </div>
+        </div>
+      </div>
+      
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h4 class="card-title">DAFITI</h4>
+                <p>DAFITI is present in the four most important fashion markets in Latin America: Argentina, Brazil, Mexico and Chile.</p>
+             </div>
+          </div>
+        </div>
+        
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h4 class="card-title">GCASH</h4>
+                <p>GCASH, officially Gcash by Alipay, is a Philippine mobile wallet, mobile payments and branchless banking service.</p>
+              </div>
+            </div>
+          </div> 
+        </div> 
+      </div> 
+        </section>   
+        <section class="work-education">  
+              <div class="container pt-5 pb-5">
+                <h3 class="text-center mb-5">Educational Attainment</h3>
+                 
+                <div class="row">
+                    <div class="col text-end">
+                      <div class="px-5">
+                           KodeGo
+                      <div>Full Stack Web Development (part time)</div>
+                      <div>September 2022 - Present</div>
+                     </div> 
+                    </div> 
+                  
+                       <div class="col"></div>                       
+                      </div>
+                    <div class="col">                  
+                      <div class="row order-last">
+                          High school
+                      <div>Columbio High School</div>
+                      <div>1995-1996</div>
+                      </div>
+                    
+                        <div class="col"></div>                    
+                    </div>
+                      <div class="row">
+                        <div class="col text-end">
+                          Elementary
+                        <div>Malingon Elementary School</div>
+                        <div>1990-1991</div>  
+                        </div>
+                      
+                      <div class="col"></div>
+                      </div>                       
+          </section>                       
+     </body>
+</html>   
+
+
+
+
+
+                    
+                      
+
+
+                   
+          
+       
+                      
+
+                    
+                   
+
+                      
+              

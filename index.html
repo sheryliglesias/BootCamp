@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  
+   
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
+    <!-- Optional JavaScript; -->  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  
+
+
+
+<style>
+
+  .btn-primary{
+    width: -3px;
+    border-radius: 4px;
+  }
+  
+   .hero {
+      background-image: url('cover1.jpg');
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+      position: relative;
+      z-index: 2;
+      height: 300px;
+      
+    }
+    .hero::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color:none;
+      z-index: -1;
+     
+    }
+    .banner{
+      font-weight: bolder;
+    }
+     
+    
+   .left{
+    background-color: #ccc;
+   }
+   .center{
+   background-color: #ccc;
+    
+   }
+   .right{
+    background-color: #ccc;
+   }
+
+   *{
+    padding:0;
+    margin:0,
+   }
+   body{
+    background-color:rgb(35, 134, 233);
+   }
+    
+   .about-1{
+    margin:30px;
+    padding: 5px;
+   }
+   .about-1 h1{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+   }
+   .about-1 p{
+    text-align: center;
+    padding:1px;
+    color: rgb(235, 221, 221);
+
+   }
+   .about-item{
+    margin-bottom: 30px;
+    margin-top: 20px;
+    background-color: rgb(237, 237, 245);
+    padding:80px,30px;
+    box-shadow: 0 0 9px rgba(0,0,0 .6);
+   }
+   .col-img{
+      background-image: url('about image.jpeg');
+      background-position: center;
+      background-size: cover;
+      min-height: 500px;
+
+    }
+    
+   
+    
+  </style>
+
+ <header>         
+   <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
+     <div class="container">
+      <a href="#" class="navbar-brand mb-0 h1">
+      <img class="d-inline-block align-top" src="gardavu logo.jpeg" width="100" height="100"></a>
+    <button class="navbar-toggler" type="button"
+       data-bs-toggle="collapse"data-bs-target="#navbarNav"
+       aria-controls="navbarNav"aria-expanded="false"
+       aria-label="Toggle-navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+                                   
+     <div class="collapse navbar-collapse" id="nav">
+       <ul class="navbar-nav">
+         <li class="nav-item active">
+           <a href="#home" class="nav-link active">Home</a>
+         </li>               
+               
+         <li class="nav-item active">
+            <a href="#about us" class="nav-link active">About Us</a>    
+         </li>    
+    
+         <li class="nav-item active">
+            <a href="#service" class="nav-link active">Services</a>
+         </li>                               
+    
+         <li class="nav-item active">
+            <a href="#company policies" class="nav-link active">Company Policies</a>
+         </li>
+
+         <li class="nav-item active">
+            <a href="#contact" class="nav-link active">Contact</a>            
+         </li> 
+         </ul>
+       </div>
+
+     <form class="d-flex">
+        <input type="text" class="form-control me-4">
+          <button type="search" class="btn-primary btn-primary">Search</button>
+       </form>
+      </nav>
+     </div>
+   </header>
+    
+  <section class="banner">
+   <div class="hero vh-100 d-flex align-items-center" id="home">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class=" display-4 text-primary" style="font-weight: 500;">We Keep Watch, So You Don't Have To!</h2>
+          <p class="bx-pull-left bx bxs-quote-alt-left bx-md text-warning text-uppercase my-4">We make people safe, We protect your business,
+             We secure, You live safe...
+          </p>                   
+      </div>
+    </div>
+   </div>
+ </section>
+
+
+</head>
+<body>  
+
+  <h1 class="text-light font-weight-bold text-center">SECURITY AND CLEANING AGENCY</h1>
+ 
+  <!--SERVICE-->
+
+  <section class="service" id="service"> 
+  <div class="container-fluid">
+    <h2 class="text-black text-center">SERVICES</h2>
+    <p class="text-white font-weight-bold text-center">Private security, Risk Prevention Consulting, 
+      Industrial Cleaning and Management of Industrial Services.
+    </p>      
+          
+  <div class="row">
+     <div class="col-sm-4 center"><img class="img-responsive img-thumbnail"src="cover3.jpg">      
+       <p>Cleanliness and Maintenance of Offices
+          Maintenance of work areas
+          industrial cleaning.
+       </p>
+  </div>
+
+      <div class="col-sm-4 center"><img class="img-responsive img-thumbnail" src="guardservice1.jpg">       
+        <p>Access control information service Point of Contact with Clients and Suppliers
+          Rounds and Perimeter Surveillance
+          Security Guards 7x24.</p>
+     </div>
+      <div class="col-sm-4 right"><img class="img-responsive img-thumbnail" src="servicephoto.jpg">       
+        <p>We inform the candidate about the activity of the company to which he will provide his services.
+          We report the contractual conditions that we offer to develop the function, in terms of income, working hours, incentives, training, career development, duties and obligations.
+          We deliver clear information about the contract terms, training period, evaluation and renewal of contracts.          
+        </p>
+      </div>
+   </div>
+  </div>
+</section> <!--SERVICE-->
+
+    
+    
+     <!--COMPANYPOLICY-->
+                
+ <section class="row w-100">  
+    <div class="col-lg-6 col-img"></div>     
+      <div class="col-lg-6 py-5">
+       <div class="container">
+         <div class="row">
+           <div class="col-md-10 offset-md-1">                              
+               <h3 class="text-dark text-uppercase text-center"> Company Policies</h3>
+               <i class='bx bxs-bell bx-tada bx-md'></i>
+                <p class="text-white font-weight-bold"> We want your business to do well, that's why we focus on doing our work with excellence and focus on the development of people and their individual capabilities.
+                  Considerations that you must keep in mind when hiring private security services and of which we give guarantees of compliance:
+                </p>                                       
+              </div>
+             </div>              
+            </div>
+           
+            <div class="d-flex mt-5">
+              <div class="iconbox me-3"> 
+                <p class="bx bxs-check-shield text-uppercase text-white"> have an up-to-date OS10 course? Do they have in their possession the credential to carry out the work within their facilities?</p>                                                                
+           </div>
+          </div>
+          <div class="d-flex mt-5">
+          <div class="iconbox me-3">
+               <p class="bx bxs-check-shield text-uppercase text-white"> Does the staff of the private security company that you hire receive their renumeration in a timely manner? Social laws are canceled according to what is established by current legislation?</p>            
+         </div>
+        </div>   
+        <div class="d-flex mt-5"> 
+          <div class="iconbox me-3 ">                     
+              <p class="bx bxs-check-shield text-uppercase text-white"> Has the personnel hired to provide services at your facility received adequate training to carry out security tasks by the company? Once operating, they will receive specific training to improve their surveillance and
+                prevention skills, helping to improve the level of services in your facilities?  </p>
+            </div>
+           </div>  
+          <div class="d-flex mt-5">
+         <div class="iconbox me-3">     
+             <p class="bx bxs-check-shield text-uppercase text-white"> Who prepares and supervises the staff to properly carry out security tasks at your facilities?</p>
+           </div>
+          </div>  
+         <div class="d-flex mt-5">
+        <div class="iconbox me-3">
+            <p class="bx bxs-check-shield text-uppercase text-white"> How is the staff at your facility controlled and supervised? What happens if a person does not show up for work? How does the security 
+              company respond to these unforeseen events?</p>
+           </div>
+          </div>  
+         <div class="d-flex mt-4">
+        <div class="iconbox me-3">     
+           <p class="bx bxs-check-shield text-uppercase text-white"> Does the company that provides security services have permanent support 24 hours a day, 365 days a year? What are the communication channels available?</p>
+          </div>
+         </div>  
+        <div class="d-flex mt-4">
+       <div class="iconbox me-3">          
+          <p class="bx bxs-check-shield text-uppercase text-white"> Does the company providing security services subcontract external resources and under what conditions and in what proportion?</p>
+         </div>
+        </div>  
+       </div>
+                        
+     </section> <!--COMPANYPOLICY-->
+
+     <!--CONTACT-->
+     <section>
+      <div class="container mt-5">
+        <h1>Contact Me</h1>
+        <form class="row g-3">
+         <div class="col-md-6">
+          <label form="firstname" class="form-label">First Name</label>
+           <input type="text" class="form-control" id="firstNAme" required>
+          </div>
+          <div class="col-md-6">
+            <label form="LastNAme" class="form-label">Last Name</label>
+             <input type="text" class="form-control" id="LAstName" required>
+          </div>
+          <div class="col-md-8"> 
+            <label form="emailInfo" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="emailInfo" required>
+          </div>
+          <div class="col-md-4">
+            <label form="placeholder" class="form-label">Phone Number</label>
+           <input type="text" class="form-control" id="placeholder">
+          </div>
+          <div class="col-md-12">
+            <label form="comments" class="form-label"Comments, Question?></label>
+            <textarea class="form-control" id="comments" rows="3"></textarea>
+          </div>
+         <div class="col-md-12">
+          <button type="submit" class="btn btn-primary">Submit</button>  
+        </div>
+        <div class="col-md-6 col-sm-12 col-xs-12">
+          <div class="map-area">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3250.8727072642864!2d-71.67731928474798!3d-35.43318318025289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9665c41ab8c8166d%3A0x49af4fcd98d50467!2sCalle%206%20Pte.%2C%20Talca%2C%20Maule!5e0!3m2!1sen!2scl!4v1664729367229!5m2!1sen!2scl" allowfullscreen="" loading="lazy"></iframe>"
+      </div>       
+       </div>
+         <p class="text-center text-white">If you need more information about our services, do not hesitate to contact us, we will be pleased to answer your questions.
+           Enter your information and we will respond instantly.
+         </p>
+       </form>
+      </div>
+     </section><!--CONTACT-->
+  
+  
+  <!--ABOUTUS-->
+
+  <section class="my-portfolio pt-5 pb-5">
+    <div class="container">
+      <h3 class="text-center mb-5">ABOUT US</h3>
+      <p class="text-center text-light">We are an organization of people, with professionals, technicians and specialists trained to deliver high-quality services.</p>        
+      <p class="text-center text-light"> We want your business to go well, that is why we focus on doing our work with excellence.</p>          
+      <p class="text-center text-light"> We become part of your challenges, contributing with our experience and management capacity
+     </p>
+       <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4 justify-content-evenly">
+        <div class="col">
+         <div class="card h-100">
+          <div class="card-body">
+            
+           <h4 class="card-title text-center">Our Security Philosophy</h4>
+          <p class="text-primary">Safety always comes first at the name of the company. 
+            Our systematic approach to setting and maintaining the highest safety and security
+            standards means that you can focus on doing the job to your people, products, or
+            property without any risk.</p>
+          </div>   
+        </div> 
+      </div>
+   
+  <div class="col">
+     <div class="card h-100">
+       <div class="card-body">
+         <h4 class="card-title text-center">Experience and Management skills</h4>
+         <p class="text-primary">GARDAVÚ is an organization of people, professionals, technicians and specialists in Private Security, Office Cleaning and Risk Prevention.
+          We provide comprehensive security services for private companies, organizations and public services, educational establishments, condominiums, communities of people and massive events.
+          Our professional team is made up of Engineers, Psychologists, Risk Preventionists, Former Armed Forces Professionals, who have more than 20 years of experience in management and training of human teams, customer care and service, public and private security, prevention of risks, occupational health. Acquired experience leading and managing industrial services at the national and international level, such as: Chile, USA, France, Canada, among others.</p>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="col">
+    <div class="card h-100">
+      <div class="card-body">
+        <h4 class="card-title text-center">HR POLICIES</h4>
+         <p class="text-primary">No company can be competent and remain over time without trained and motivated employees. Companies are made by people, that is why we strive to attract and retain the best so that they become motivated and trained collaborators in the provision of superior quality services,
+          specialists who are aware of what to do with our clients.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <div class="card-body">
+        <h4 class="card-title text-center">RISK PREVENTION CONSULTING</h4>
+         <p class="text-primary">Technical Risk Assessments, Inspection and Safety Observations.
+          Diagnosis and Risk Report with Recommendation to Legal Compliance.
+          Elaboration and Preparation of Emergency Plans.
+          Determination of Safe Zone and Signaling of evacuation routes.
+          Preparation and Evaluation of Drills.Training in Matters Inherent in Safety and Prevention.
+          </p>
+      </div>
+    </div>
+  </div>
+       </div>
+    </div>
+      </section>
+
+ 
+
+    <!--FOOTER-->
+
+    <footer class="bg-light text-dark pt-5 pb-4">
+        <div class="container text-center text-md-left">
+         <div class="row text-center text-md-left">
+           <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+             <h5 class="text-uppercase mb-4 font-weight-bold text-info">About Us</h5>
+             <hr class="mb-4">
+            
+             <p>GARDAVU SOCIEDAD GENERAL DE SEGURIDAD PRIVADA, 
+              ASEO INDUSTRIAL, SERVICIOS Y ASESORÍAS
+             </p>
+
+         </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+               <hr class="mb-4">
+                <p>
+                  <a href="#youraccount" class="text-decoration:none">Your Account</a>
+                </p>
+                <p>
+                  <a href="#manageyourcontentanddevices" class="text-decoration:none">Manage Your Content and Devices</a>
+                </p>
+                <p>
+                  <a href="#help" class="text-decoration:none">Help</a>
+                </p>
+
+            </div>
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 font-weight-bold text-info">Contact Us</h5>
+              <hr class="mb-4">
+              <p>
+                <li class="fas fa-home mr-3">Talca,Chile</li>
+              </p>
+              <p>
+                <li class="fas fa-envelope mr-3">contacto@gardavu.cl</li>
+              </p>
+              <p>
+                <li class="fas fa-phone-mr-3">Teléfono: (56 9) 5246 0892</li>
+              </p>          
+         </div>
+          </div> 
+           <div class="social-icon">
+            <a href="#facebook"><i class="bx bxl-facebook"></i>Facebook</a>
+            <a href="#twitter"><i class="bx bxl-twitter"></i>Twitter</a>
+            <a href="#instagram"><i class="bx bxl-instagram"></i>Instagram</a>
+          </div>
+        </div>
+    </footer><!--FOOTER-->
+  </body>
+ 
+</html>

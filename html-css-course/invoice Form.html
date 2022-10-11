@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+             <title>Invoice Table</title>
+
+      <style>
+              table, th, td{
+                     border:1px solid  rgb(89, 122, 223);border-radius: 6px;
+              
+              }
+
+      </style>
+</head>
+<body>
+       
+       <div id="main" class="page-wrapper">
+<fieldset> 
+       <legend style="font-weight:bold;">Invoice Details</legend>
+
+       <label>Invoice To</label>
+       <input type="name" name="name"placeholder="name"/>
+       <div>
+            <label>Contact #:</label>
+            <input type=" contact_number" name="number"placeholder=" contact number"/>
+       </div>
+       <label>Date:</label>
+       <input type="date" name="birthdate"/>
+</fieldset>       
+       
+ <table style="width: 100%">
+              <thead>
+                     <tr>
+                        <th style="width:100px;height:20px;background-color:violet">Item Description</th>
+                        <th style="width:100px;height:20px;background-color:violet">Qty</th>     
+                        <th style="width:100px;height:20px;background-color:violet">Unit Price</th>
+                        <th style="width:100px;height:20px;background-color:violet">Amount</th>
+                      </tr>
+               </thead>
+              
+                     <tr>
+                            <td><textarea name="Description 1" placeholder="Item Description"></textarea></td>
+                            <td><input name="Qty1" type="number"></td>
+                            <td><input name="UnitPrice1" type="number"></td>
+                            <td><input name="Amount1" type="number"></td>
+                     
+                     </tr>
+                     <tr>
+                            <td><textarea name="Description 2" placeholder="Item Description"></textarea></td>
+                            <td><input name="Qty2" type="number"></td>
+                            <td><input name="UnitPrice2" type="number"></td>
+                            <td><input name="Amount2" type="number"></td>
+                    </tr>
+                     <tr>
+                            <td><textarea name="Description 3" placeholder="Item Description"></textarea></td>
+                            <td><input name="Qty3" type="number"></td>
+                            <td><input name="UnitPrice3" type="number"></td>
+                            <td><input name="Amount3" type="number"></td>
+                    </tr>
+                     <tr>
+                       <td><textarea name="Description 4" placeholder="Item Description"></textarea></td>
+                       <td><input name="Qty4" type="number"></td>
+                       <td><input name="UnitPrice4" type="number"></td>
+                       <td><input name="Amount4" type="number"></td>   
+                    </tr>
+        <tr>
+              <td colspan="3" style="text-align:right;font-weight: bolder;">Subtotal</td>
+              <td><textarea name="" maxlenght="100"width;100%></textarea></td>
+        </tr>
+        <tr>
+              <td colspan="3" style="text-align:right;font-weight:bolder;">Vat 12%</td>
+              <td><textarea name="" maxlenght="100"width;100%></textarea></td>
+        </tr>
+        <tr>
+              <td colspan="3" style="text-align:right;font-weight:bolder;background-color:magenta">Total</td>
+              <td><textarea name="" maxlenght="100"width;100%></textarea></td>
+       </tr>
+</table>
+<fieldset> 
+       <legend style="font-weight:bold;">Additional Details</legend>
+ 
+       <p>Payment Method</p>
+       <div>
+              <select name="Paymentmethod" Payment Method:required>
+                     <option value="">-- Select Payment--</option>
+                     <option value="debit card">Debit card</option>
+                     <option value="mastercard">mastercard</option>
+                     <option value="cash on delivery">cash on delivery</option>
+                     <option value="Gcash">Gcash</option>
+                     <option value="American Express">American Express</option>
+                     <option value="Paypal">Paypal</option>
+                     <option value="MACH" >MACH</option>
+                     <option value="Tenpo">Tenpo</option>
+              </select>
+ 
+                <div style="margin-top: 20px">
+                <input type="radio" id="homeAddress"name="address" value="home"/>
+                <label for="homeAddress">Home</label>
+                <input type="radio" id="officeAddress"name="address"/>
+                <label for="officeAddress">Office</label>
+       </div>
+            <textarea rows="4" cols="60" name="extra_info" placeholder="enter comment here"></textarea>
+
+       </div>     
+       <div>
+            <input type="submit" value="submit" style="width:70px;"/>
+       </div>      
+</fieldset>                       
+</body>
+</html>
+
+
+
+
+
+
+
+
+   
+     
+      
+      
+
+  
+    
+  
+    
+
+    
+
+
+
+     
