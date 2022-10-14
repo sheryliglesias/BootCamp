@@ -6,14 +6,12 @@
 
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  
   <link href="css/bootstrap.min.css" rel="stylesheet"/>
-  <script type="text/javascript" src="js/kodego.js"></script>  
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>  
 
+  <script type="text/javascript" src="js/kodego.js"></script>
   
-  
-
 </head>
 <body>
 
@@ -39,50 +37,49 @@
       }        
 </script>
 
-  <input type="text" id="single_char" value="" maxlenght="1"/>
-  <button onclick="getVowelConsonant()">Check Here</button>
+   <input type="text" id="single_char" value="" maxlenght="1"/>
+   <button onclick="getVowelConsonant()">Check Here</button>
  <div id="result"></div>
 
 
 <div action="#">
- <input type="text" id="number1" placeholder="Number Only" maxlenght="20"
- onkeypress="return restrictAlphabets(event)">
- <input type="text" id="number2" placeholder="Number Only" maxlenght="20"
- onkeypress="return restrictAlphabets(event)">
+   <input type="text" id="number1" placeholder="Number Only" maxlenght="20"
+      onkeypress="return restrictAlphabets(event)">
+   <input type="text" id="number2" placeholder="Number Only" maxlenght="20"
+      onkeypress="return restrictAlphabets(event)">
 </div>
 
+<div>
+   <button onClick="operation('+')">+</button>
+   <button onClick="operation('-')">-</button>
+   <button onClick="operation('*')">*</button>
+   <button onClick="operation('/')">/</button>
+   <button onClick="display()">=</button>
+ </div>
 
-<input type="text" id="n1"/><brk/><brk/>
-<input type="text" id="n2"/><brk/><brk/>
+   <input type="text" id="number1"/>
+   <input type="text" id="number2"/>
 
 
 <select id="operators">
-  <option value="+">+</option>
-  <option value="-">-</option>
-  <option value="X">X</option>
-  <option value="/">/</option>
-  <option value="=">=</option>
+   <option value="+">+</option>
+   <option value="-">-</option>
+   <option value="*">*</option>
+   <option value="/">/</option>
+   <option value="=">=</option>
 </select>
-<button onClick="calc();">=</button>
-<input type="text" id="result"/>
+
+   <button onClick="calc();">=</button>
+   <input type="text" id="result"/>
 
 
 
 <script>
-    function restrictAlphabets(e){
-      var x = e.which || e.keycode;
-      if((x >= 48 && x <= 57))
-      return true;
-      else
-      return false;
-    }  
-    //calculator
-
-    function calc(){
+function calculator(){
  
- var n1 = parseInt(document.getElementById('n1').value);
- var n2 = parseInt(document.getElementById('n2').value);
- var oper = document.getElementById('operators').value;
+    var n1 = parseFloat(document.getElementById('number1').value);
+    var n2 = parseFloat(document.getElementById('number2').value);
+    var oper = document.getElementById('operators').value;
 
  if(oper === '+'){
     document.getElementById('result').value = n1+n2;
@@ -104,7 +101,81 @@
     document.getElementById('result').value = n1=n2;
  }
 }
+
+
+
+
+    function restrictAlphabets(e){
+      var x = e.which || e.keycode;
+      if((x >= 48 && x <= 57))
+      return true;
+      else
+      return false;
+    }  
+
+   
+
+
+    </script>
+
+    <h3>SWITCH CASE</h3>
+
+    <input type="month" onchange="getMonth(event)"/>
+
+    <script>
+    function getMonth(e){
+      let month = new Month(e.currentTarget.value);
+      let day = date.getMonth();
+
+      switch(month){
+        case 0:
+          document.getElementById("result6").innerHTML = "January";
+          break;
+       case 1:
+          document.getElementById("result6").innerHTML = "February";
+          break;
+       case 2:
+          document.getElementById("result6").innerHTML = "March";
+          break;
+       case 3:
+          document.getElementById("result6").innerHTML = "April";
+          break;
+       case 4:
+          document.getElementById("result6").innerHTML = "May";
+          break;
+        case 5:
+          document.getElementById("result6").innerHTML = "June";
+          break;
+        case 6:
+          document.getElementById("result6").innerHTML = "July";
+          break;
+          case 7:
+          document.getElementById("result6").innerHTML = "August";
+          break;
+          case 8:
+          document.getElementById("result6").innerHTML = "September";
+          break;
+          case 9:
+          document.getElementById("result6").innerHTML = "October";
+          break;
+          case 10:
+          document.getElementById("result6").innerHTML = "November";
+          break;
+          case 11:
+          document.getElementById("result6").innerHTML = "December";
+          break;
+        default:
+          document.getElementById("result6").innerHTML = "unknown month value";
+          break;
+        }
+
+    }
+
 </script>
+
+
+
+    
  
  </body>
 </html>
