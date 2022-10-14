@@ -12,51 +12,97 @@
  
   </head>
   <body>
+    <h2>https://devdocs.io/javascript/</h2>
 
+
+<h3>IF ELSE</h3>
     <input type="text" id="first_number" value="" placeholder="input first value"/>
     <input type="text" id="second_number" value="" placeholder="input second value"/>
-
+   
     <button onclick="doCheck()">Do Check</button>
    
 
     <div id="result"></div>
     <div id="result2"></div>
 
+    <h3>SWITCH CASE</h3>
+    <input type="text" id="flower_name" value="" placeholder="" onkeyup="flowerNameEventHandler()"/>
+    <div id="result3"></div>
+
+    <input type="text" id="month_name" value="" placeholder="" onkeyup="getMonthDays()"/>
+    <div id="result4"></div>
+    
     <script>
       function doCheck(){
          let value1 = parseInt(document.getElementById('first_number').value);
          let value2 = parseInt(document.getElementById('second_number').value);
-      }
-    </script>
-
-<script>
-      function doCheck(){
-         let value1 = document.getElementById('first_number').value;
-         let value2 = document.getElementById('second_number').value;
-
       
+      if(value1 % 2 == 0){
+        document.getElementById('result').innerHTML = "ODD";       
+      }else{
+        document.getElementById('result').innerHTML = "EVEN"; 
+      }
+    
+        
        if(value1 == value2){
             document.getElementById('result').innerHTML = "value" + value1 +"is equal to value"+ value2 +".";
-       }else if(value1 |= value2){
-        if(value1 < value2){
+       }else{      
+          if(value1 < value2){
              document.getElementById('result').innerHTML = "value" + value1 +"is less than value"+ value2 +".";
        }else{
              document.getElementById('result').innerHTML = "value" + value1 +"is greater than value"+ value2 + ".";
+          }
        }
              document.getElementById('result2').innerHTML = "TOTAL" + (value1 + value2);
 
-      }
-
-  let x = 10;
-  let y =20;
-  if(x > y){
-    document.write("x is greater than y,");
-  } else{
-    document.write("x is less than y.");
-
     }
-  }
-</script>
+
+    function flowerNameEventHandler(){       
+        let flower = document.getElementById("flower_name").value;  
+        document.getElementById("result3").innerHTML = flower + "s are " + getFlowerColor(flower);              
+    }
+
+    function getMonthDays(){
+      document.getElementById("result4").innerHTML ="getCalendarMonthDays"(document.getElementById("month_name").value);
+    }
+   
+    switch(x){
+        case 1:
+        case 3: 
+        case 5:
+        case 15:
+            // do statement
+            break;
+        case 2:
+            // do statement
+            break;
+        case 4:
+             // do statement  
+            break;
+        case 6:
+            // do statement
+            break;
+        case 8:
+            // do statement
+            break;
+        case 12:
+            // do statement
+            break;
+        default:
+            // do statement
+            break;
+    }
+  </script>
+
+ </body>
+</html>      
+      
+
+
+
+  
+      
+  
 
 
 
@@ -70,5 +116,3 @@
 
 
 
-</body>
-</html>
