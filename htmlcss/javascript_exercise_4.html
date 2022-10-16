@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <html>
+    <head>
+        
+        <title>JavaScript Conditions</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        <link  rel="stylesheet" href="css/bootstrap.min.css"/>   
+        <script src="js/bootstrap.min.js" type="text/javascript" ></script>
+        <script src="js/kodego.js" type="text/javascript" ></script>
+
+       
+
+        
+    </head>
+    <body>
+
+        <h2>https://devdocs.io/javascript/</h2>
+        
+        <h3>JavaScript Exercise_4 Hands On</h3>
+    
+
+        
+  
+        <script>
+
+           document.getElementById("result1").innerHTML += "<br>";
+        incrementCountFor(0, 100, document.getElementById("result1"), 5);
+
+        let numbers = [1, 1, 2, 2, 2, 3, 3, 4, 5, 5, 5, 5, 6, 6, 7, 7, 7, 8, 9, 9, 9];
+
+        function countConsecutiveValue(list, consecutive=2){
+            let prevNumber = 0;
+            let totalConsecutive = 0;
+            let sequence = 0;
+            for(let i=0; i< list.length; i++){
+                if(prevNumber == list[i]){
+                    sequence++;
+                }else{
+                    sequence = 0;
+                }
+
+                if(sequence == (consecutive - 1)){
+                    totalConsecutive++;
+                    sequence = 0;
+                    prevNumber = 0;
+                }else{
+                    prevNumber = list[i];   
+                }
+            }
+
+
+            return totalConsecutive;
+        }
+
+        console.log(countConsecutiveValue(numbers));
+        console.log(countConsecutiveValue(numbers, 3));
+        console.log("4 consecutive" + countConsecutiveValue(numbers, 4));
+
+
+
+
+
+
+
+    </script>
+
+    </body>
+  </html>
