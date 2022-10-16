@@ -19,142 +19,136 @@
          <div id="result"></div>
          <p id="result1"></p >
 
-   <script>
-   
-       incrementcounter(1, 10, document.getElementById("result"));
-       incrementcounter(0, 20, document.getElementById("result"));
-       incrementcounter(0, 100, document.getElementById("result1"), 5);
+    <script>
+        
+        incrementcounter(1, 10, document.getElementById("result"));
+        incrementcounter(0, 20, document.getElementById("result"));
+        incrementcounter(0, 100, document.getElementById("result1"), 5);
 
         let names =["james", "rowen", "jessie", "tims", "maki", "eunice","mark"];
-        let counter = 0;
-        while(names [counter] !="mark"){
-            counter++;
-        }
-        document.getElementById("result").innerHTML += "<br>";
-        document.getElementById("result").innerHTML += "counter";
+     let counter = 0;
+     while(names [counter] !="mark"){
+         counter++;
+     }
+
+     document.getElementById("result").innerHTML += "<br>";
+            document.getElementById("result").innerHTML += counter;
+
+            document.getElementById("result1").innerHTML += "<br>";
+            decrementCounter(100, 0, document.getElementById("result1"), 10);
+
+            let runStatment = false;
+            do{
+                console.log('test');
+                runStatment = false;
+            }while(runStatment);
 
 
-        document.getElementById("result1").innerHTML += "<br>";
-        decrementCounter(100, 0, document.getElementById("result1"), 10);
+            document.getElementById("result1").innerHTML += "<br>";
+     counter = 1;
+     do{
+         document.getElementById("result1").innerHTML += counter;
+         counter++;
+     }while(counter <= 10);
 
-        let runStatment = false;
-        do{
-            console.log('test');
-            runstatment = false;
-        }while(runStatment);
+     names =["james", "rowen", "jessie", "tims", "maki", "eunice","mark"];
+     counter = 0;
+     while(counter < names.lenght){
+         console.log(names[counter]);
+         counter++;
+     }
 
-        document.getElementById("result1").innerHTML += "<br>";
-        counter = 1;
-        do{
-            document.getElementById("result1").innerHTML += counter;
-            counter++;
-        }while(counter <= 10);
-
-        names =["james", "rowen", "jessie", "tims", "maki", "eunice","mark"];
-        counter = 0;
-        while(counter < names.lenght){
-            console.log(names[counter]);
-            counter++;
-        }
-
+  
      
+     
+
+     let personalInfo = [
+         {firstName:"Juan", lastName:"Dela Cruz", age: 24, gender:"male",jobTitle:"manager"},
+         {firstName:"Anna", lastName:"Salvador", age: 21, gender:"female",jobTitle:"Junior Dev"},
+         {firstName:"Mark", lastName:"bautista", age: 28, gender:"male",jobTitle:"Senior Fullstack"},
+         {firstName:"Micheal", lastName:"Garcia", age: 31, gender:"male",jobTitle:"CEO"},
+         ];
         
-        
+         let genderCount = 0;
+         counter = 0;
+         while(counter < personalInfo.lenght){
 
-        let personalInfo = [
-            {firstName:"Juan", lastName:"Dela Cruz", age: 24, gender:"male",jobTitle:"manager"},
-            {firstName:"Anna", lastName:"Salvador", age: 21, gender:"female",jobTitle:"Junior Dev"},
-            {firstName:"Mark", lastName:"bautista", age: 28, gender:"male",jobTitle:"Senior Fullstack"},
-            {firstName:"Micheal", lastName:"Garcia", age: 31, gender:"male",jobTitle:"CEO"},
-            ];
-           
-            let genderCount = 0;
-            counter = 0;
-            while(counter < personalInfo.lenght){
+             if(personalInfo[counter].gender == "male"){
+                 genderCount++;
+             }
+            counter++;
+         }
 
-                if(personalInfo[counter].gender == "male"){
-                    genderCount++;
-                }
-               counter++;
-            }
-
-        console.log(genderCount);
+     console.log(genderCount);
 
 
 
-        console.log(genderCount);
+     console.log(genderCount);
 
-            let staff = [{name: "Oliver Queen", title: "CEO", gender: "male", age: 38, languages: ["english", "spanish"]}, 
-                {name: "Ben Hur", title: "Security consultant", gender: "male", age: 25, languages: ["latin", "italian"]}, 
-                {name: "Jessica Alba", title: "Admin Assistant", gender: "female", age: 23, languages: ["english", "spanish"]}, 
-                {name: "Pepper Piper", title: "Quality Assurance", gender: "female", age: 32, languages: ["english", "spanish"]},
-                {name: "Red Sullivan", title: "Project Manager", gender: "male", age: 27, languages: ["russian", "english"]},
-                {name:"Juan Dela Cruz", title: "Manager", age: 24, gender: "male", languages: ["russian", "french"]},
-                {name:"Anna Salvador", title: "Junior Dev", age: 21, gender: "female", languages: ["english", "french"]},
-                {name:"Mark Bautista", title: "Senior Fullstack Dev", age: 28, gender: "male", languages: ["russion", "spanish"]},
-                {name:"Micheal Garcia", title: "CEO", age: 40, gender: "male", languages: ["english", "latin"]}];
-
-
-            let femaleCount = getStaffCount('gender', 'female');
-            let ceoCount = getStaffCount('title', 'CEO');
-
-                console.log("age equal to 25: " + getStaffCount('age', 25));
-                console.log("age less than 30: " + getStaffCount('age', 30, "<"));
-                console.log("age greater than 30: " + getStaffCount('age', 30, ">"));
-                console.log("age greater than equal 27: " + getStaffCount('age', 27, ">="));
-                console.log("age less than equal 27: " + getStaffCount('age', 27, "<="));
-                console.log(femaleCount);
-                console.log(ceoCount);
-                console.log(getStaffCount('language', 'spanish'));
-                console.log(getStaffCount('language', 'english'));
-                console.log(getStaffCount('language', 'french'));
-                console.log(getStaffCount('language', 'russian'));
+         let staff = [{name: "Oliver Queen", title: "CEO", gender: "male", age: 38, languages: ["english", "spanish"]}, 
+             {name: "Ben Hur", title: "Security consultant", gender: "male", age: 25, languages: ["latin", "italian"]}, 
+             {name: "Jessica Alba", title: "Admin Assistant", gender: "female", age: 23, languages: ["english", "spanish"]}, 
+             {name: "Pepper Piper", title: "Quality Assurance", gender: "female", age: 32, languages: ["english", "spanish"]},
+             {name: "Red Sullivan", title: "Project Manager", gender: "male", age: 27, languages: ["russian", "english"]},
+             {name:"Juan Dela Cruz", title: "Manager", age: 24, gender: "male", languages: ["russian", "french"]},
+             {name:"Anna Salvador", title: "Junior Dev", age: 21, gender: "female", languages: ["english", "french"]},
+             {name:"Mark Bautista", title: "Senior Fullstack Dev", age: 28, gender: "male", languages: ["russion", "spanish"]},
+             {name:"Micheal Garcia", title: "CEO", age: 40, gender: "male", languages: ["english", "latin"]}];
 
 
+         let femaleCount = getStaffCount('gender', 'female');
+         let ceoCount = getStaffCount('title', 'CEO');
 
-                document.getElementById("result1").innerHTML += "<br>";
-            incrementCountFor(0, 100, document.getElementById("result1"), 5);
-
-            let numbers = [1, 1, 2, 2, 2, 3, 3, 4, 5, 5, 5, 5, 6, 6, 7, 7, 7, 8, 9, 9, 9];
-
-            function countConsecutiveValue(list, consecutive=2){
-                let prevNumber = 0;
-                let totalConsecutive = 0;
-                let sequence = 0;
-                for(let i=0; i< list.length; i++){
-                    if(prevNumber == list[i]){
-                        sequence++;
-                    }else{
-                        sequence = 0;
-                    }
-
-                    if(sequence == (consecutive - 1)){
-                        totalConsecutive++;
-                        sequence = 0;
-                        prevNumber = 0;
-                    }else{
-                        prevNumber = list[i];   
-                    }
-                }
-
-
-                return totalConsecutive;
-            }
-
-            console.log(countConsecutiveValue(numbers));
-            console.log(countConsecutiveValue(numbers, 3));
-            console.log("4 consecutive" + countConsecutiveValue(numbers, 4));
+             console.log("age equal to 25: " + getStaffCount('age', 25));
+             console.log("age less than 30: " + getStaffCount('age', 30, "<"));
+             console.log("age greater than 30: " + getStaffCount('age', 30, ">"));
+             console.log("age greater than equal 27: " + getStaffCount('age', 27, ">="));
+             console.log("age less than equal 27: " + getStaffCount('age', 27, "<="));
+             console.log(femaleCount);
+             console.log(ceoCount);
+             console.log(getStaffCount('language', 'spanish'));
+             console.log(getStaffCount('language', 'english'));
+             console.log(getStaffCount('language', 'french'));
+             console.log(getStaffCount('language', 'russian'));
 
 
 
-    
-     </script>
-   </body>
- </html>
+             document.getElementById("result1").innerHTML += "<br>";
+         incrementCountFor(0, 100, document.getElementById("result1"), 5);
+
+         let numbers = [1, 1, 2, 2, 2, 3, 3, 4, 5, 5, 5, 5, 6, 6, 7, 7, 7, 8, 9, 9, 9];
+
+         function countConsecutiveValue(list, consecutive=2){
+             let prevNumber = 0;
+             let totalConsecutive = 0;
+             let sequence = 0;
+             for(let i=0; i< list.length; i++){
+                 if(prevNumber == list[i]){
+                     sequence++;
+                 }else{
+                     sequence = 0;
+                 }
+
+                 if(sequence == (consecutive - 1)){
+                     totalConsecutive++;
+                     sequence = 0;
+                     prevNumber = 0;
+                 }else{
+                     prevNumber = list[i];   
+                 }
+             }
+
+
+             return totalConsecutive;
+         }
+
+         console.log(countConsecutiveValue(numbers));
+         console.log(countConsecutiveValue(numbers, 3));
+         console.log("4 consecutive" + countConsecutiveValue(numbers, 4));
 
 
 
-
-
-
-
+ 
+    </script>
+  </body>
+</html>
