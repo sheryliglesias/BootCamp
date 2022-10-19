@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+       <title>JavaScript Condition</title>
+
+       <meta name="viewport" content="width=device-width, initial-scale=1"/>
+       <link href="css/bootstrap.min.css" rel="stylesheet"/>
+       <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/kodego.js"></script>
+       
+
+</head>
+     <body>
+       
+
+      <h1>Machine Problem 1</h1>
+
+       
+      <input type="text" onkeyup="onKeyUpHandler(event)"/>
+      <p id="result"></p>
+
+
+
+      <h1>Machine Problem 2</h1>
+      <p id="result2"></p>
+
+      
+      
+
+
+ <script>
+    
+       function getNextDivisibleNumber(number) {
+        for (let i = number; i <= number + 7; i++){
+          if (i % 7 == 0) {
+            return i;
+          }
+        }
+       }
+       function onKeyUpHandler(e) {
+        document.getElementById("result").innerHTML = getNextDivisibleNumber (
+          e.currentTarget.value
+        );
+       }
+
+
+   
+
+
+      let invoiceItems = [{description: "Mouse", Qty: 3, unitPrice: 200}, 
+                {description: "Keyboard", Qty: 3, unitPrice: 400},
+                {description: "Monitor", Qty: 6, unitPrice: 5400},
+                {description: "CPU Tower Case", Qty: 3, unitPrice: 1200},
+                {description: "Headset", Qty: 3, unitPrice: 500},
+                {description: "UPS", Qty: 1, unitPrice: 4000},];
+
+
+                const totalUnitPriceAmount = [
+                {
+                  description: 'Mouse',
+                  Qty: '3',
+                  unitprice: '200',
+                },               
+                {
+                  description: 'Keyboard',
+                  Qty: '3',
+                  unitprice: '400',
+                },
+                {
+                  description: 'Monitor',
+                  Qty: '6',
+                  unitprice: '5,400',
+                },
+                {
+                  description: 'CPU Tower Case',
+                  Qty: '3',
+                  unitprice: '1,200',
+                },
+                {
+                  description: 'Headset',
+                  Qty: '3',
+                  unitprice: '500',
+                },
+                {
+                  description: 'UPS',
+                  Qty: '1',
+                  unitprice: '4,000',
+                }
+
+                ];
+
+                const totalUnitPrice = amount.reduce(
+                  (acc, item) => acc + (unitprice.item * qty.item),                 
+                  0
+                );
+
+                console.log(totalUnitPriceAmount);
+
+</script>
+
+ 
+    </body>
+  
+</html>
