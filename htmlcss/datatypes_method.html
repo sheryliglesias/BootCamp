@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+         <title>data type method</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link href="css/bootstrap.min.css" rel="stylesheet"/>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+   <script type="text/javascript" src="js/kodego.js"></script>
+  
+</head>
+  <body>
+       <h2>String Method</h2>
+
+       <script>
+          let str = "Hello World";
+          console.log(str.lenght);
+
+          // slice(start, end)
+          console.log(str.slice(6,11));
+          console.log("example 2: "+ str.slice(-11, -6));
+          console.log("example 3: "+ str.slice(0, -4) + "..");
+          console.log("example 4: "+ str.slice(0, -5) + "uwu");
+
+          // substring(start, end)
+          console.log(str.substring(-7,5));
+          console.log(str.substring(4));
+
+          // substr(start, lenght)
+          console.log(str.substr(6,2));
+
+          let paragraph = "create a function that accepts a NUMBER and output the next number in sequence that is divisibe by 7."
+          // replace()
+          let newParagraph = paragraph.replace("function","method")
+          console.log(newParagraph);
+          console.log(newParagraph.replace("accepts","input"));
+
+          console.log(paragraph.replace(/number/g,"#"));
+          console.log(newParagraph.replace(/number/i,"#"));
+          console.log(newParagraph.replace(/number/gi,"#"));
+
+          // toUpperCase and toLowerCase
+          console.log(paragraph.toLocaleUpperCase());
+          console.log(paragraph.toLocaleLowerCase());
+
+          // concat (str1, str2, str3...)
+          console.log("Hello".concat(" ","WORLD"));
+          let conStr ="";
+          console.log(conStr.concat("Andrew", "R.","Falsado", paragraph));
+
+          // trim()
+          let strCode = "  TEST VALUE  ";
+          console.log(strCode.trim());
+          console.log(strCode.trimStart());
+          console.log(strCode.trimEnd());
+
+          // 001
+          // 002
+          // 100
+          // padStart(lenght, char) padEnd(lenght, char)
+          console.log("1".padStart(6,"0"));
+          console.log("20".padStart(6,"0"));
+          let strNumber = "100";
+          console.log(strNumber.padStart(6,"x"));
+          console.log(strNumber.padEnd(6,"*"));
+
+          // charAt(position), charCodeAt(position)
+          let chartStr = "Create a function that";
+          console.log(chartStr.charAt(7));
+          console.log(chartStr.charAt(9));
+          console.log(chartStr.charCodeAt(7));
+
+         // split(separator)
+         let words = chartStr.split(" ");
+         console.log(chartStr.split(":"));
+         console.log(chartStr.split(","));        
+         console.log(words);
+
+
+        //indexOf(keyword, starting point)
+         paragraph = "create a function that accepts a NUMBER and output the next number in sequence that is divisibe by 7."
+         console.log(paragraph.indexOf("7"));
+         console.log(paragraph.indexOf("NUMBER"));
+         console.log(paragraph.indexOf("accepts", 33));
+         console.log(paragraph.lastIndexOf("accepts", 33));
+
+         // search(keyword)
+         console.log(paragraph.search("7"));
+         console.log(paragraph.search("accepts"));
+
+         // match()
+         console.log(paragraph.match(/that/g));
+         console.log(paragraph.match(/th/g));
+         console.log(paragraph.match(/number/gi));
+
+        
+         let strArr = paragraph.match(/a/g);
+         console.log(strArr);
+         let index = 0;
+         strArr.forEach(function(word){       
+          index = paragraph.indexOf(word, index);
+          console.log(index);
+          index += word.lenght;
+         });
+
+         // includes(keyword)
+         console.log(paragraph.includes("visible"));
+         console.log(paragraph.includes("seq"));
+         console.log(paragraph.includes("numeric"));
+         console.log(paragraph.includes("8"));
+         console.log(paragraph.includes("create", 20));
+
+         //startWith(keyword), endsWith(keyword)
+         console.log(paragraph.startsWith("Create"));
+         console.log(paragraph.startsWith("that"));
+         console.log(paragraph.startsWith("create"));
+
+         console.log(paragraph.endsWith("7."));
+         console.log(paragraph.endsWith("."));
+         console.log(paragraph.endsWith("7"));
+         console.log(paragraph.endsWith("divisible by 7."));
+
+       </script>
+
+        <h2>Number Method</h2>
+
+        <script>
+          let number1 = 123.45;
+
+          // number toString()
+          console.log("Php" + number1.toString());
+          console.log("" + number1);
+
+          // toExponential(digit)
+          console.log(number1.toExponential(2));
+          console.log(number1.toExponential(5));
+
+          let number999 = 874010984056109848502859475765841481075
+          console.log(number999.toExponential(5));
+
+          //toFixed()
+          console.log(number1.toFixed(1));
+          console.log(number1.toFixed(0));
+          console.log(number1.toFixed(5));
+
+          // toPrecision()
+          console.log(number1.toPrecision());
+          console.log(number1.toPrecision(2));
+
+          let number3 = 1678.2345;
+          console.log(number3.toPrecision(1));
+          console.log(number3.toPrecision(2));
+          console.log(number3.toPrecision(4));
+          console.log(number3.toPrecision(5));
+          console.log(number3.toPrecision(7));
+
+          //valueOf()
+          console.log(number3.valueOf());
+
+          //parseInt()
+          console.log(parseInt(number3));
+          console.log(parseInt(number3 + "string"));
+          console.log(parseInt(" " + number3));
+          console.log(parseInt("1234.67 890239"));
+
+          //parseFloat()
+          console.log(parseFloat(number3));
+          console.log(parseFloat(9999.99));
+          console.log(parseFloat(number3 +" "));
+          console.log(parseFloat("." + number3));
+          console.log(parseFloat("1678.2345"));
+
+          //(baseSalary * 12) / 261 = perday / 8 = perHour
+          let perDay = (25000 * 12)/261;
+          console.log(perDay.toFixed(2));
+          console.log((perDay / 8 ).toFixed(2));
+
+        </script>
+
+          <h2>Array Method</h2>
+
+       
+        <div id="array_display"></div>
+
+        <script>
+          let name = ["james","rowen","jessie","tims","maki","eunice","mark"];
+          console.log(names);
+          console.log(names.toString());
+          document.getElementById("array_display").innerHTML = name;
+          document.getElementById("array_display").innerHTML += <br/>;
+          document.getElementById("array_display").innerHTML += name.toString();
+
+          document.getElementById("array_display").innerHTML +="span class=\"fa-fa-star\">*</span>";
+          document.getElementById("array_display").innerHTML +="<br/>";
+          document.getElementById("array_display").innerHTML += names.join(" x ");
+          document.getElementById("array_display").innerHTML += names.join("*");
+          document.getElementById("array_display").innerHTML +="<br/>";
+          document.getElementById("array_display").innerHTML +=names.join(" & ");
+
+          //pop(), push()
+          document.getElementById("array_display").innerHTML += "<br/>";
+          document.getElementById("array_display").innerHTML += names.pop() + "<br/>";
+          document.getElementById("array_display").innerHTML += names + "<br/>";
+          document.getElementById("array_display").innerHTML += names.pop() + "<br/>";
+          document.getElementById("array_display").innerHTML += names + "<br/>";
+          let popName = names.pop();
+          document.getElementById("array_display").innerHTML += popName;
+
+          document.getElementById("array_display").innerHTML += "<br/>";
+          document.getElementById("array_display").innerHTML += names.push("rechel") + "<br/>";
+          document.getElementById("array_display").innerHTML += "<br/>";
+          names.push("sheryl");
+          document.getElementById("array_display").innerHTML += "<br/>";
+
+          //shift(), unshift()
+          names.shift();
+          document.getElementById("array_display").innerHTML += "<br/>";
+          names.shift();
+          document.getElementById("array_display").innerHTML += "<br/>";
+          names.unshift("carmen");
+          document.getElementById("array_display").innerHTML += "<br/>";
+          names.unshift("dave");
+          document.getElementById("array_display").innerHTML += "<br/>";
+
+          names[0] = "davetwo";
+          document.getElementById("array_display").innerHTML += "<br/>";
+          names[0] = "fecel";
+          document.getElementById("array_display").innerHTML += "<br/>";
+
+          let name2 = ["james","rowen","jessie","tims","maki","eunice","mark"];
+          
+          names = names.concat(names2, names);
+          document.getElementById("array_display").innerHTML += names + "<br/>";
+
+          //splice(), slice()
+          names2.splice(2, 0, "Dave","Nino");
+          document.getElementById("array_display").innerHTML += names2 + "<br/>";
+          names2.splice(2, 3,);
+          document.getElementById("array_display").innerHTML += names2 + "<br/>";
+
+          names = names.slice(2,6);
+          document.getElementById("array_display").innerHTML += names + "<br/>";
+
+          // sort(), reverse()
+          names2.sort();
+          document.getElementById("array_display").innerHTML += names2 + "<br/>";
+          names2 = names2.reverse();
+          document.getElementById("array_display").innerHTML += names2.join(",") + "<br/>";
+          document.getElementById("array_display").innerHTML += names2.join("<br>_") + "<br/>";
+       
+       
+       </script>
+
+
+
+
+
+      
+  </body>
+
+</html>

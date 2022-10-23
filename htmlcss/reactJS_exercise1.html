@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+       <title>reactjs</title>
+
+       <meta name="viewport" content="width=device-width, initial-scale=1"/>
+       <link href="css/bootstrap.min.css" rel="stylesheet"/>
+       <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/kodego.js"></script>
+       
+
+</head>
+     <body>
+
+      <h1>Furniture</h1>
+     <div id="results"></div>
+
+<script>
+
+
+  class Table{
+    constructor(color, shape){
+     this.color = color;
+     this.shape = shape;
+  }
+ }
+
+ class Table extends Furniture{
+  constructor(isImported){
+    super("brown", "square");
+    this.isImported = isImported;
+  }
+ }
+  let brownFurniture = new Table(false);
+  console.log(brownFurniture.color);
+
+
+
+  class Bed{
+   constructor(color, shape){
+      this.color = color;
+      this.shape = shape;     
+   }
+ }
+ 
+ class Bed extends Furniture{
+  constructor(isImported){
+    super("white", "square");
+    this.isImported = isImported;
+  }
+ }
+
+  let whiteFurniture = new Bed(false);
+  console.log(whiteFurniture.color);
+
+
+ class Sofa{
+  constructor(isImported){
+    super("blue", "round");
+    this.shape = shape;
+  }
+ }
+
+ class Sofa extends Furniture{
+  constructor(isImported){
+    super("blue", "round");
+    this.shape = shape;
+  }
+ }
+  let blueFurniture = new Sofa(false);
+  console.log(blueFurniture.color);
+
+
+  class Car {
+  constructor(name) {
+    this.brand = name;
+  }
+
+  present() {
+    return 'I have a ' + this.brand;
+  }
+}
+
+class Model extends Car {
+  constructor(name, mod) {
+    super(name);
+    this.model = mod;
+  }  
+  show() {
+      return this.present() + ', it is a ' + this.model
+  }
+}
+const mycar = new Model("Ford", "Mustang");
+mycar.show();
+
+ </script>
+
+</body>
+  
+</html>
