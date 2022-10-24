@@ -3,79 +3,55 @@
 
   <head>
 
-       <title>reactjs</title>
-
-       <meta name="viewport" content="width=device-width, initial-scale=1"/>
-       <link href="css/bootstrap.min.css" rel="stylesheet"/>
-       <script type="text/javascript" src="js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="js/kodego.js"></script>
        
+     <meta charset=" UTF-8">
+     <meta http-equal="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+     <title>reactjs</title>
 
-</head>
-     <body>
+  </head>
+  <body>
 
-      <h1>Furniture</h1>
-     <div id="results"></div>
+   
+     <div id="result"></div>
 
 <script>
 
 
-  class Table{
+  class Furniture{
     constructor(color, shape){
      this.color = color;
      this.shape = shape;
   }
  }
 
- class Table extends Furniture{
-  constructor(isImported){
-    super("brown", "square");
-    this.isImported = isImported;
-  }
- }
-  let brownFurniture = new Table(false);
-  console.log(brownFurniture.color);
-
-
-
-  class Bed{
-   constructor(color, shape){
-      this.color = color;
-      this.shape = shape;     
-   }
- }
- 
  class Bed extends Furniture{
   constructor(isImported){
-    super("white", "square");
+    super("brown", "round");
     this.isImported = isImported;
+    this.round = round;
   }
  }
 
-  let whiteFurniture = new Bed(false);
-  console.log(whiteFurniture.color);
-
-
- class Sofa{
-  constructor(isImported){
-    super("blue", "round");
-    this.shape = shape;
-  }
- }
-
- class Sofa extends Furniture{
-  constructor(isImported){
-    super("blue", "round");
-    this.shape = shape;
-  }
- }
-  let blueFurniture = new Sofa(false);
-  console.log(blueFurniture.color);
-
+ class Client extends Furniture{
+   constructor(name, contactNum, emailAdd){
+     super("brown Bed", "round");
+     this.name = name;
+     this.contactNum = contactNum;
+     this.emailAdd = emailAdd;
+   }
+ } 
+  
 
   
- </script>
 
+  let furn = new Furniture("Brown Bed","round");
+  document.write(furn.type);
+ 
+   
+  
+ </script>
+ 
 </body>
   
 </html>
